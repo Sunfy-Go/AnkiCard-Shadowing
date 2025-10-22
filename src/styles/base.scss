@@ -1,0 +1,161 @@
+// NHẬP KHẨU TẤT CẢ BIẾN MÀU SẮC VÀ THIẾT LẬP
+@import './variables.scss';
+
+
+// ==========================================================
+// 1. THIẾT LẬP CƠ SỞ (HTML & BODY)
+// ==========================================================
+html {
+    font-size: 16px;            /* Gốc cho đơn vị rem */
+    scroll-behavior: smooth;    /* Cuộn trang mượt mà */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: $color-text-primary;
+    background-color: $color-bg-base;
+    line-height: $line-height-base;
+}
+
+html, body {
+    height: 100%;
+}
+
+// ==========================================================
+// 2. TYPOGRAPHY (CHỮ VÀ TIÊU ĐỀ)
+// ==========================================================
+// Đặt kiểu chung cho tất cả tiêu đề
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+// Định nghĩa kích thước tiêu đề bằng đơn vị REM
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+small {
+    font-size: 0.875em;
+}
+
+strong { font-weight: $font-weight-bold; }
+em { font-style: italic; }
+
+// Dùng chung cho danh sách
+ul, ol {
+    margin-left: 1.5rem;
+}
+
+// Dùng chung cho đoạn văn Code
+code, pre {
+    font-family: 'Fira Code', monospace;
+}
+
+code {
+    background: $color-bg-code;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+pre { 
+    background: $color-bg-pre; 
+    padding: 1rem; 
+    overflow: auto; 
+}
+
+blockquote {
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 4px solid #ddd; // Giữ lại màu cứng hoặc dùng biến border-light
+    color: $color-text-secondary; // Dùng màu chữ phụ
+}
+
+// ==========================================================
+// 3. THÀNH PHẦN TƯƠNG TÁC CƠ BẢN
+// ==========================================================
+a {
+    color: $color-primary;
+    text-decoration: none;
+    
+    // Lồng (Nesting) cho trạng thái hover
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+button {
+    cursor: pointer;
+    background: $color-bg-base;
+    color: inherit;
+    
+    // Lồng cho trạng thái disabled
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+}
+
+// Input, Textarea và Select được nhóm lại
+input, textarea, select {
+    font: inherit;
+    border: 1px solid $color-border-input;
+    border-radius: 4px;
+    padding: 6px 10px;
+    background: $color-bg-base;
+    color: inherit;
+    
+    &:focus {
+        border-color: $color-primary;
+        outline: none;
+    }
+    
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+}
+
+// Hiệu ứng focus chung cho khả năng truy cập (Accessibility)
+:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+}
+
+// ==========================================================
+// 4. MEDIA VÀ CẤP ĐỘ KHỐI
+// ==========================================================
+img {
+    display: block;
+    max-width: 100%;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $color-border-base;
+    margin: 1.5rem 0;
+}
+
+// ==========================================================
+// 5. BẢNG
+// ==========================================================
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid $color-border-base;
+}

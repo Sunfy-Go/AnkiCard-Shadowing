@@ -1,0 +1,73 @@
+/* 1. THIẾT LẬP CƠ SỞ (BOX MODEL & FONT) */
+// Thiết lập mô hình hộp (Box Model) hiện đại cho mọi phần tử
+// Padding và Border được tính vào width/height đã đặt.
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Thiết lập thuộc tính cơ sở cho body và font
+html {
+    line-height: 1.15;                 /* Chiều cao dòng nhất quán */
+    -webkit-text-size-adjust: 100%;    /* Ngăn chặn tự động thay đổi font trên di động */
+    scroll-behavior: smooth;           /* (Nếu dùng) Cuộn trang mượt mà */
+}
+
+body {
+    margin: 0;                         /* Loại bỏ margin mặc định của body */
+    min-height: 100vh;                 /* Chiều cao tối thiểu cho toàn màn hình */
+    text-rendering: optimizeSpeed;     /* Ưu tiên tốc độ render (tối ưu hiệu suất) */
+    font: inherit;                     /* Đảm bảo tất cả các thẻ kế thừa font từ body/html */
+}
+
+/* 2. LOẠI BỎ MARGIN, PADDING, VÀ BORDER MẶC ĐỊNH */
+// Nhóm các phần tử cấp khối (Block-level) thường có margin/padding mặc định
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+figure, figcaption,
+dl, dt, dd,
+menu, nav,
+table, caption, thead, tbody, tfoot, tr, th, td,
+fieldset, form, legend, label,
+article, aside, section, footer, header, hgroup {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+// Thiết lập cơ sở cho tất cả các thẻ còn lại
+div, span, applet, object, iframe,
+img, canvas, embed, video, audio,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, output, ruby, summary, time, mark, applet, 
+details {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline; /* Căn chỉnh theo chiều dọc nhất quán */
+    font-size: 100%;
+}
+
+
+/* 3. XỬ LÝ DANH SÁCH & LIÊN KẾT */
+ol, ul {
+    list-style: none; /* Loại bỏ dấu chấm/số mặc định */
+}
+
+a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+    color: inherit;        /* Kế thừa màu chữ từ phần tử cha */
+}
+
+
+/* 4. MEDIA VÀ ĐỐI TƯỢNG (RESPONSIVE) */
+img,
+picture, 
+video,
+canvas {
+    max-width: 100%; /* Đảm bảo nội dung không tràn container */
+    height: auto;    /* Giữ nguyên tỷ lệ khung hình */
+    display: block;  /* Tránh khoảng trống dưới chân hình ảnh (dành cho img/video) */
+}
