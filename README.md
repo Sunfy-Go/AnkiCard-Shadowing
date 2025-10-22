@@ -5,9 +5,11 @@
 It integrates an interactive waveform player, real-time audio tracking, and minimal controls, allowing users to repeat and shadow native pronunciation efficiently.
 
 ## Screenshots
-### With Web
+### With Web (for deverloper)
 ![AnkiCard-Shadowing (web)](./demo/AnkiCard-Shadowing.png)
 
+### With Anki
+The software is in development
 
 ## Core Features
 🎧 Waveform-based audio visualization.
