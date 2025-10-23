@@ -44,7 +44,8 @@
 </style>
 
 <script setup lang="ts">
-import { Mic, CircleX, CirclePlay, CirclePause, CircleCheck } from 'lucide-vue-next';
+import { Mic } from 'lucide-vue-next';
+// import { Mic, CircleX, CirclePlay, CirclePause, CircleCheck } from 'lucide-vue-next';
 
 function startRecoding() {
 
