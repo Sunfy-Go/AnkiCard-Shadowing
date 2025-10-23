@@ -27,12 +27,13 @@
 }
 
 .user-recording__button {
+    @include flex-center;
     color: #acacac;
     margin: 0 .5rem;  
     border: none;
-    @include flex-center;
     padding: 0;
 }
+
 .user-recording__span {
     font-size: 14px;
     color: #949494;
@@ -50,6 +51,4 @@ import { Mic } from 'lucide-vue-next';
 function startRecoding() {
 
 }
-
-
 </script>

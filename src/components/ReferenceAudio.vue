@@ -42,7 +42,7 @@
 } 
 
 .reference-audio__waveform {
-    height: 135px;
+    height: 160.2px;
     @include flex-center;
 }  
 
@@ -74,8 +74,8 @@
     color: #acacac;
     margin: 0 .5rem;  
     border: none;
-    @include flex-center;
     padding: 0;
+    @include flex-center;
 }
 
 .reference-audio__button .audio-icon {
@@ -83,7 +83,7 @@
 }
 
 .reference-audio__button:hover .audio-icon {
-    color: #1cafd0; /* màu đậm hơn khi hover */
+    color: #1cafd0; 
     transition: color 0.2s ease;
 }
 </style>

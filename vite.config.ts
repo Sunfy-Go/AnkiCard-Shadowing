@@ -9,6 +9,7 @@ import ElementPlus from 'unplugin-element-plus/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+    base: '/AnkiCard-Shadowing/', 
     resolve: {
         // Cấu hình cách Vite xử lý việc "resolve" (giải quyết) đường dẫn import
         alias: {
