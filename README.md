@@ -6,7 +6,11 @@ It integrates an interactive waveform player, real-time audio tracking, and mini
 
 ## Screenshots
 ### With Web (for deverloper)
-![AnkiCard-Shadowing (web)](./demo/AnkiCard-Shadowing.png)
+
+Preview: <https://sunfy-go.github.io/AnkiCard-Shadowing>
+
+<!-- ![AnkiCard-Shadowing (web)](./demo/AnkiCard-Shadowing.png) -->
+<img src="./demo/AnkiCard-Shadowing.png" alt="AnkiCard-Shadowing (web)" width="60%">
 
 ### With Anki
 The software is in development
