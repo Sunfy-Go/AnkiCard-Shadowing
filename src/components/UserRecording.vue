@@ -10,7 +10,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '../styles/mixins.scss';
+@use '../styles/mixins.scss' as mixis;
 
 #user-recording {
     width: 100%;
@@ -21,13 +21,13 @@
 }
 
 .user-recording__start {
-    @include flex-center;
+    @include mixis.flex-center;
     flex-direction: column;
     margin-top: 18px;
 }
 
 .user-recording__button {
-    @include flex-center;
+    @include mixis.flex-center;
     color: #acacac;
     margin: 0 .5rem;  
     border: none;
@@ -49,6 +49,5 @@ import { Mic } from 'lucide-vue-next';
 // import { Mic, CircleX, CirclePlay, CirclePause, CircleCheck } from 'lucide-vue-next';
 
 function startRecoding() {
-
 }
 </script>
